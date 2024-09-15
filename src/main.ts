@@ -1,6 +1,7 @@
 import CabeceraPagina, { Alineacion } from "./modules/CabeceraPagina";
 import Calculadora from "./modules/Calculadora";
 import Cancion from "./modules/Cancion";
+import Cuenta from "./modules/Cuenta";
 
 import "./style.css";
 import typescriptLogo from "./typescript.svg";
@@ -54,3 +55,16 @@ console.warn("Ejercicio #3 - Cancion");
 const cancion = new Cancion("Lose Yourself", "RAP");
 cancion.setAutor("Eminem");
 cancion.mostrarDatos();
+
+// --------------------Ejercicio #3 - Cuenta --------------------------
+
+console.warn("Ejercicio #4 - Cuenta");
+
+const miCuenta = new Cuenta("Marvin Figueroa", 100, "Ahorros", "1234567890");
+
+miCuenta.mostrarDatos();
+miCuenta.depositar(4);
+miCuenta.depositar(10);
+miCuenta.retirar(3);
+miCuenta.retirar(15);
+miCuenta.retirar(1000);

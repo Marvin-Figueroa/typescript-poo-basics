@@ -1,3 +1,5 @@
+import CabeceraPagina, { Alineacion } from "./modules/CabeceraPagina";
+
 import "./style.css";
 import typescriptLogo from "./typescript.svg";
 import viteLogo from "/vite.svg";
@@ -17,4 +19,17 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   </div>
 `;
 
-console.warn("Hello World");
+// --------------------Ejercicio #1 - Cabecera Pagina --------------------------
+
+console.warn("Ejercicio #1 - Cabecera Pagina");
+
+const cabecera = new CabeceraPagina("Mi Página", "#000", "Arial");
+
+// Obtener las propiedades
+console.log(cabecera.obtenerPropiedades());
+
+// Establecer la alineación
+cabecera.establecerAlineacion(Alineacion.Centro);
+
+// Imprimir todas las propiedades
+cabecera.imprimirPropiedades();

@@ -1,4 +1,5 @@
 import CabeceraPagina, { Alineacion } from "./modules/CabeceraPagina";
+import Calculadora from "./modules/Calculadora";
 
 import "./style.css";
 import typescriptLogo from "./typescript.svg";
@@ -33,3 +34,14 @@ cabecera.establecerAlineacion(Alineacion.Centro);
 
 // Imprimir todas las propiedades
 cabecera.imprimirPropiedades();
+
+// --------------------Ejercicio #2 - Calculadora --------------------------
+
+console.warn("Ejercicio #2 - Calculadora");
+
+console.log("5 + 3 = ", Calculadora.sumar(5, 3)); // 8
+console.log("5 - 3 = ", Calculadora.restar(5, 3)); // 2
+console.log("5 * 3 = ", Calculadora.multiplicar(5, 3)); // 15
+console.log("10 / 2 = ", Calculadora.dividir(10, 2)); // 5
+console.log("2 ** 3 = ", Calculadora.potencia(2, 3)); // 8
+console.log("5! = ", Calculadora.factorial(5)); // 120

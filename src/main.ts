@@ -2,6 +2,7 @@ import CabeceraPagina, { Alineacion } from "./modules/CabeceraPagina";
 import Calculadora from "./modules/Calculadora";
 import Cancion from "./modules/Cancion";
 import Cuenta from "./modules/Cuenta";
+import Empleado from "./modules/Empleado";
 
 import "./style.css";
 import typescriptLogo from "./typescript.svg";
@@ -56,7 +57,7 @@ const cancion = new Cancion("Lose Yourself", "RAP");
 cancion.setAutor("Eminem");
 cancion.mostrarDatos();
 
-// --------------------Ejercicio #3 - Cuenta --------------------------
+// --------------------Ejercicio #4 - Cuenta --------------------------
 
 console.warn("Ejercicio #4 - Cuenta");
 
@@ -68,3 +69,19 @@ miCuenta.depositar(10);
 miCuenta.retirar(3);
 miCuenta.retirar(15);
 miCuenta.retirar(1000);
+
+// --------------------Ejercicio #5 - Persona y Empleado --------------------------
+
+console.warn("Ejercicio #5 - Persona y Empleado");
+
+const empleado = new Empleado(
+  "Marvin",
+  "Figueroa",
+  "Santa Ana, El Salvador",
+  "2424-2424",
+  30,
+  1100
+);
+
+empleado.mostrarDatos();
+empleado.imprimirSueldo();

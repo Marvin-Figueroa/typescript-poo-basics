@@ -1,5 +1,6 @@
 import CabeceraPagina, { Alineacion } from "./modules/CabeceraPagina";
 import Calculadora from "./modules/Calculadora";
+import Cancion from "./modules/Cancion";
 
 import "./style.css";
 import typescriptLogo from "./typescript.svg";
@@ -45,3 +46,11 @@ console.log("5 * 3 = ", Calculadora.multiplicar(5, 3)); // 15
 console.log("10 / 2 = ", Calculadora.dividir(10, 2)); // 5
 console.log("2 ** 3 = ", Calculadora.potencia(2, 3)); // 8
 console.log("5! = ", Calculadora.factorial(5)); // 120
+
+// --------------------Ejercicio #3 - Cancion --------------------------
+
+console.warn("Ejercicio #3 - Cancion");
+
+const cancion = new Cancion("Lose Yourself", "RAP");
+cancion.setAutor("Eminem");
+cancion.mostrarDatos();
